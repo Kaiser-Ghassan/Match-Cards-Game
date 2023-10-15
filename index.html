@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius+Sans+One"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <title>Memory Cards Game</title>
+  </head>
+  <body>
+    <div class="contain" id="contain">
+      <div class="congrats">
+        <h1>Congrat<span class="hide">ulation</span>s !</h1>
+        <div class="done">
+          <svg
+            version="1.1"
+            id="tick"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 37 37"
+            style="enable-background: new 0 0 37 37"
+            xml:space="preserve"
+          >
+            <path
+              class="circ path"
+              style="
+                fill: #0cdcc7;
+                stroke: #07a796;
+                stroke-width: 3;
+                stroke-linejoin: round;
+                stroke-miterlimit: 10;
+              "
+              d="
+        M30.5,6.5L30.5,6.5c6.6,6.6,6.6,17.4,0,24l0,0c-6.6,6.6-17.4,6.6-24,0l0,0c-6.6-6.6-6.6-17.4,0-24l0,0C13.1-0.2,23.9-0.2,30.5,6.5z"
+            />
+            <polyline
+              class="tick path"
+              style="
+                fill: none;
+                stroke: #fff;
+                stroke-width: 3;
+                stroke-linejoin: round;
+                stroke-miterlimit: 10;
+              "
+              points="
+        11.6,20 15.9,24.2 26.4,13.8 "
+            />
+          </svg>
+        </div>
+        <div class="text">
+          <p>You have Win</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards-container">
+      <div class="card" data-image="1">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/1.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="1">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/1.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="2">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/2.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="2">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/2.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="3">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/3.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="3">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/3.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="4">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/4.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="4">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/4.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="5">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/5.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="5">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/5.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="6">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/6.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="6">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/6.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="7">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/7.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="7">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/7.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="8">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/8.png" alt="front-face" class="front" />
+      </div>
+      <div class="card" data-image="8">
+        <img src="/img/front.PNG" alt="back-face" class="back" />
+        <img src="/img/8.png" alt="front-face" class="front" />
+      </div>
+    </div>
+    <div class="buttons-container">
+      <button class="reset-button" id="reset-button" role="button">
+        <span class="text"
+          >Reset <i class="fa fa-refresh" aria-hidden="true"></i>
+        </span>
+      </button>
+      <div class="counter" id="moves-counter">Moves</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+       <script src="javascript.js"></script>
+
+  </body>
+</html>
